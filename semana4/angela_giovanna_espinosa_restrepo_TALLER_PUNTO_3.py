@@ -1,10 +1,10 @@
 # AyudanteNomina v2.0
-# Programa para calcular la nomina de una empresa. Lee los nombres3 y salarios desde un archivo de texto
-# que se suministra como argumento de linea de comandos, por ejemplo, nombres3.txt. Al final guarda la liquidacion
+# Programa para calcular la nomina de una empresa. Lee los nomina y salarios desde un archivo de texto
+# que se suministra como argumento de linea de comandos, por ejemplo, nomina.txt. Al final guarda la liquidacion
 # en el archivo liquidacion.txt, el registro de errores en errores.txt y el registro de operacion en log.txt.
 
-# Desarrollado por Juan Sebastian Lopez Villa
-# Agosto 31 de 2015
+# Desarrollado por Angela Giovanna Espinosa Restrepo
+# Septiembre 21 de 2015
 # Valores de porcentajes para liquidacion de nomina tomados de http://www.gerencie.com/liquidacion-de-la-nomina.html.
 
 # Importar libreria sys para manejo de argumentos de linea de comandos
@@ -198,12 +198,12 @@ if (numero_lineas_nomina < numero_minimo_lineas):
 # se procede a realizar los calculos y procesamientos.
 
 # Arrays que contendran la informacion de nomina y liquidacion.
-# Se crea array nomina con dimensiones 2 columnas y tantas filas como empleados o numero de lineas en el archivo de nombres3.txt, es decir, numero_lineas_nomina
+# Se crea array nomina con dimensiones 2 columnas y tantas filas como empleados o numero de lineas en el archivo de nomina.txt, es decir, numero_lineas_nomina
 # nomina[indice][0] -> Nombre completo empleado
 # nomina[indice][1] -> Salario empleado
 nomina = [[columnas for columnas in range(2)] for filas in range(numero_lineas_nomina)]
 
-# Se crea array liquidacion con dimensiones 13 columnas y tantas filas como empleados o numero de lineas en el archivo de nombres3.txt, es decir, numero_lineas_nomina
+# Se crea array liquidacion con dimensiones 13 columnas y tantas filas como empleados o numero de lineas en el archivo de nomina.txt, es decir, numero_lineas_nomina
 # liquidacion[indice][0] -> Aporte auxilio de transporte efectivo.
 # liquidacion[indice][1] -> Aporte cesantias 
 # liquidacion[indice][2] -> Aporte intereses sobre cesantias

@@ -3,8 +3,8 @@
 # que se suministra como argumento de linea de comandos, por ejemplo, nombres.txt. Al final guarda la liquidacion
 # en el archivo liquidacion.txt, el registro de errores en errores.txt y el registro de operacion en log.txt.
 
-# Desarrollado por Juan Sebastian Lopez Villa
-# Agosto 31 de 2015
+# Desarrollado por Angela Giovanna Espinosa Restrepo
+# Septiembre 21 de 2015
 # Valores de porcentajes para liquidacion de nomina tomados de http://www.gerencie.com/liquidacion-de-la-nomina.html.
 
 # Importar libreria sys para manejo de argumentos de linea de comandos
@@ -24,7 +24,7 @@ nombre_archivo_liquidacion = "liquidacion.txt"
 # Numero minimo de lineas para archivo de nomina
 numero_minimo_lineas = 2
 
-# Constantes validas para el anio 2015
+# Constantes validas para el ano 2015
 
 # Salario Minimo Legal Vigente (SMLV) 2015
 salario_minimo = 644350
@@ -139,7 +139,7 @@ def validar_linea_salarios(linea_por_validar, numero_linea):
 	
 	arreglo_nombre =  nombre_por_validar.split(" ")
 	# Validar que el salario sea de tipo numerico
-	# Validacion 6 (Va6)
+	# Validacion 5 (Va5)
 	try:
 		salario_base = int(linea_por_validar)								
 		array_respuesta[1] = salario_base

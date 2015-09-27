@@ -1,10 +1,10 @@
 # AyudanteNomina v2.0
-# Programa para calcular la nomina de una empresa. Lee los nombres y salarios desde un archivo de texto
-# que se suministra como argumento de linea de comandos, por ejemplo, nombres.txt. Al final guarda la liquidacion
+# Programa para calcular la nomina de una empresa. Lee los nomina y salarios desde un archivo de texto
+# que se suministra como argumento de linea de comandos, por ejemplo, nomina.txt. Al final guarda la liquidacion
 # en el archivo liquidacion.txt, el registro de errores en errores.txt y el registro de operacion en log.txt.
 
-# Desarrollado por Juan Sebastian Lopez Villa
-# Agosto 31 de 2015
+# Desarrollado por Agela Giovanna Espinosa Restrepo
+# Septiembre 21 de 2015
 # Valores de porcentajes para liquidacion de nomina tomados de http://www.gerencie.com/liquidacion-de-la-nomina.html.
 
 # Importar libreria sys para manejo de argumentos de linea de comandos
@@ -24,7 +24,7 @@ nombre_archivo_liquidacion = "liquidacion.txt"
 # Numero minimo de lineas para archivo de nomina
 numero_minimo_lineas = 2
 
-# Constantes validas para el anio 2015
+# Constantes validas para el ano 2015
 
 # Salario Minimo Legal Vigente (SMLV) 2015
 salario_minimo = 644350
@@ -90,7 +90,7 @@ def guardar_log(mensaje_registro):
 	escribir_linea_archivo(nombre_archivo_registro, "\n" + mensaje_registro + "\n")
 
 # Funcion para validar una linea del archivo que contiene la nomina.
-# Devuelve un array de tamanio 3. La primera posicion indica si es valido, con True y si es invalido con False.
+# Devuelve un array de tamano 3. La primera posicion indica si es valido, con True y si es invalido con False.
 # La segunda posicion contiene el nombre completo en caso de ser valida la linea, de lo contrario vacio.
 # La tercera posicion contiene el salrio en caso de ser valida la linea, de lo contrario vacio.
 def validar_linea(linea_por_validar, numero_linea):	
@@ -192,12 +192,12 @@ if (numero_lineas_nomina < numero_minimo_lineas):
 # se procede a realizar los calculos y procesamientos.
 
 # Arrays que contendran la informacion de nomina y liquidacion.
-# Se crea array nomina con dimensiones 2 columnas y tantas filas como empleados o numero de lineas en el archivo de nombres.txt, es decir, numero_lineas_nomina
+# Se crea array nomina con dimensiones 2 columnas y tantas filas como empleados o numero de lineas en el archivo de nomina.txt, es decir, numero_lineas_nomina
 # nomina[indice][0] -> Nombre completo empleado
 # nomina[indice][1] -> Salario empleado
 nomina = [[columnas for columnas in range(2)] for filas in range(numero_lineas_nomina)]
 
-# Se crea array liquidacion con dimensiones 13 columnas y tantas filas como empleados o numero de lineas en el archivo de nombres.txt, es decir, numero_lineas_nomina
+# Se crea array liquidacion con dimensiones 13 columnas y tantas filas como empleados o numero de lineas en el archivo de nomina.txt, es decir, numero_lineas_nomina
 # liquidacion[indice][0] -> Aporte auxilio de transporte efectivo.
 # liquidacion[indice][1] -> Aporte cesantias 
 # liquidacion[indice][2] -> Aporte intereses sobre cesantias
@@ -218,7 +218,7 @@ guardar_log("Cargando nomina en memoria...");
 for x in range(0, numero_lineas_nomina):
 	linea_validada = validar_linea(lineas_archivo_nomina[x], x+1)
 	
-	if(linea_validada[0] == False):
+	if(linea_validada [0] == False):
 		terminar_programa("Error en archivo de nomina!")
 
 	guardar_log("Procesando linea " + str(x+1));
