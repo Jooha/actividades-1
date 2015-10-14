@@ -1,0 +1,7 @@
+tipo=vehiculo_anfibio
+Modelo =  WhaterCar Panther
+C.c. Motor = 1500
+Numero de ejes = 4
+Helices = 0
+Numero de turbinas = 2 
+Tamano popa = 0

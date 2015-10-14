@@ -1,0 +1,12 @@
+tipo=vehiculo_espacial
+Modelo = Dream Chaser
+C.c. Motor = 2340000
+N_ejes = 2
+Numero de Alas = 2
+Numero de Alerones = 2
+Flaps = 2
+Numero de Cohetes = 2
+Capacidad Astro = 4000
+Tamano Tanque = 1000
+
+

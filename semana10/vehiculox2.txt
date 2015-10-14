@@ -1,0 +1,7 @@
+tipo=vehiculo_aereo
+modelo= MQ-9 Reaper
+cc_motor=20000
+n_ejes=2
+n_alas=2
+n_alerones=2
+flaps=2

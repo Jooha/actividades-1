@@ -1,0 +1,4 @@
+tipo=vehiculo
+modelo=Cadillac Srx
+n_ejes=2
+cc_motor=1200
